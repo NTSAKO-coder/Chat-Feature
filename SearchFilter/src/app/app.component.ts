@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { ChatComponent } from './components/chat/chat.component';
- 
+import { LenderChatComponent } from './components/lender-chat/lender-chat.component';
+import { UserChatComponent } from './components/chat-user/chat.component';
+
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ChatComponent],
-  template: `<app-chat></app-chat>`
+  imports: [UserChatComponent, LenderChatComponent],
+  templateUrl: './app.component.html'
 })
 export class AppComponent {}
